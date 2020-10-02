@@ -17,8 +17,8 @@ public class RegistrationPage extends PageObject {
     @FindBy(xpath = "/html/body/app-root/app-registration/form/div[3]/input")
     private WebElement passwordConfirm;
 
-    @FindBy(xpath = "/html/body/app-root/app-registration/form/button")
-    private WebElement submitBtn;
+    @FindBy(id = "registration-form")
+    private WebElement registerForm;
 
     public RegistrationPage(WebDriver driver) {
         super(driver);
@@ -32,7 +32,7 @@ public class RegistrationPage extends PageObject {
 
 
     public RegistrationConfirmationPage clickSubmit() {
-        clickOnWebElement(submitBtn);
+        registerForm.submit();
         return new RegistrationConfirmationPage(driver);
     }
 
@@ -52,7 +52,7 @@ public class RegistrationPage extends PageObject {
     }
 
     public boolean isBtnSubmitDisabled() {
-        return submitBtn.getAttribute("disabled") != null;
+        return registerForm.getAttribute("disabled") != null;
     }
 
     public void fillPasswordField(String password) {

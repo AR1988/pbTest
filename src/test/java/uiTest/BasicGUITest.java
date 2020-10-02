@@ -9,8 +9,6 @@ import uiTest.pages.RegistrationConfirmationPage;
 import uiTest.pages.RegistrationPage;
 import uiTest.utils.FunctionalTest;
 
-
-
 import static org.junit.Assert.assertEquals;
 
 public class BasicGUITest extends FunctionalTest {
