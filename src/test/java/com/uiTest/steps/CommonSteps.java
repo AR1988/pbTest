@@ -18,6 +18,8 @@ public class CommonSteps implements En {
         Given("I am on the {} page", (String page) -> {
             if (page.equals("Login"))
                 open(basicURL + "/user/login");
+            if (page.equals("Register"))
+                open(basicURL + "/user/registration");
         });
     }
 }

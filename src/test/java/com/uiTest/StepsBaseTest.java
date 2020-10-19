@@ -2,7 +2,7 @@ package com.uiTest;
 
 import com.codeborne.selenide.WebDriverRunner;
 import com.uiTest.driver.ChromeWebDriver;
-import com.uiTest.pages.LoginPage;
+import com.uiTest.pages.user.LoginPage;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;

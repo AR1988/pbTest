@@ -1,4 +1,4 @@
-package com.uiTest.pages;
+package com.uiTest.pages.user;
 
 import com.uiTest.utils.PageObject;
 import org.openqa.selenium.WebDriver;
