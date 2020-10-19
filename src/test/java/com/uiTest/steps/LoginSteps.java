@@ -32,7 +32,7 @@ public class LoginSteps implements En {
             Selenide.$(NavBar.LOGOUT_BTN).shouldBe(visible);
         });
 
-        Then("I observe error message '{}'", (String error) -> {
+        Then("I observe error message {}", (String error) -> {
 
             switch (error) {
                 case "Email is required.":
@@ -64,14 +64,14 @@ public class LoginSteps implements En {
             $(EMAIL_INPUT).click();
         });
 
-        When("I click the link: {}", (String link) -> {
+        When("I click the link {}", (String link) -> {
             if (link.equals("Register new Account"))
                 $(REGISTER_LINK).click();
             if (link.equals("Forgot password?"))
                 $(FORGOT_PASSWORD_LINK).click();
         });
 
-        Then("I see the text: {}", (String pageName) -> {
+        Then("I see the text {}", (String pageName) -> {
             if (pageName.equals("Register new Account"))
                 $(RegistrationPage.PAGE_NAME).shouldHave(text(pageName));
             if (pageName.equals("Forgot password?"))
