@@ -40,3 +40,4 @@ out/
 src/main/resources/application.properties
 gradle/
 /src/screenshots/
+/users_data.txt
